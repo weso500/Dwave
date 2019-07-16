@@ -1,0 +1,24 @@
+syms a
+syms b
+syms c
+syms d
+syms e
+syms f
+% x = (1*a+2*b+3*c+4*d+5*e-8)^2
+% expand(x)
+% % (1*a+2*b+3*c+4*d+5*e-8).^2
+% y = (a+b+c+d+e-3)^2
+% expand(y)
+% 
+% obj = 4*a*b+6*a*c+8*a*d+10*a*e-15*a+12*b*c+16*b*d+20*b*e-28*b+24*c*d+30*c*e-39*c+40*d*e-48*d-55*e+64
+% con = 2*a*b+2*a*c+2*a*d+2*a*e-5*a+2*b*c+2*b*d+2*b*e-5*b+2*c*d+2*c*e-5*c+2*d*e-5*d-5*e+9
+% 
+% Com = obj +con
+
+x = (a+b+c+d+e+f-3)^2
+expand(x)
+y = 1*a+2*b+2*c+4*d+5*e+6*f
+z=x+y
+expand(z)
+z = a^2 + 2*a*b + 2*a*c + 2*a*d + 2*a*e + 2*a*f - 5*a + b^2 + 2*b*c + 2*b*d + 2*b*e + 2*b*f - 4*b + c^2 + 2*c*d + 2*c*e + 2*c*f - 4*c + d^2 + 2*d*e + 2*d*f - 2*d + e^2 + 2*e*f - e + f^2 + 9
+
